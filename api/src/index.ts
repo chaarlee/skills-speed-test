@@ -58,6 +58,28 @@ app.get("/competitor", (req: Request, res: Response) => {
   res.json(competitor);
 });
 
+app.get("/tasksWithSubmissions", (req: Request, res: Response) => {
+  const secret = req.headers["sst-secret"] as string;
+  res.json(DB.getTasksWithSubmissions(secret));
+});
+
+app.post("/submitSubmission", (req: Request, res: Response) => {
+  const secret = req.headers["sst-secret"] as string;
+  const competitor = DB.getCompetitorBySecret(secret);
+  if (!competitor) {
+    res.status(401).send("Invalid secret");
+    return;
+  }
+  const taskId = req.body.taskId;
+  const submittedSolution = req.body.submittedSolution;
+  const submission = DB.submitSubmission(
+    competitor.id,
+    taskId,
+    submittedSolution
+  );
+  res.json(submission);
+});
+
 const PORT = process.env.PORT || 5432;
 app.listen(PORT, () => {
   console.log(`[server]: Server is running at http://localhost:${PORT}`);

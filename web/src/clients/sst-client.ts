@@ -30,3 +30,24 @@ export const getCompetitor = async () => {
     throw new Error(error.response?.data || "Something went wrong");
   }
 };
+
+export const getTasksWithSubmissions = async () => {
+  try {
+    const response = await instance.get(`/tasksWithSubmissions`, {});
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data || "Something went wrong");
+  }
+};
+
+export const submitSolution = async (taskId, submittedSolution) => {
+  try {
+    const response = await instance.post(`/submitSubmission`, {
+      taskId,
+      submittedSolution: JSON.stringify(submittedSolution),
+    });
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data || "Something went wrong");
+  }
+};

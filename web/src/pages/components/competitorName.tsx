@@ -6,7 +6,7 @@ export default function CompetitorName() {
 
   useEffect(() => {
     getCompetitor().then((data) => {
-      console.log("data", data);
+      // console.log("data", data);
       setCompetitor(data);
     });
   }, []);
