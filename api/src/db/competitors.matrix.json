@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Neo",
+    "nationality": "hu",
+    "workstation": "Matrix",
+    "secret": "neo",
+    "photoUrl": "/public/neo.png"
+  },
+  {
+    "id": "2",
+    "name": "Trinity",
+    "nationality": "hu",
+    "workstation": "Nebuchadnezzar",
+    "secret": "trinity",
+    "photoUrl": "/public/trinity.png"
+  },
+  {
+    "id": "3",
+    "name": "Morpheus",
+    "nationality": "hu",
+    "workstation": "Zion",
+    "secret": "morpheus",
+    "photoUrl": "/public/morpheus.png"
+  }
+]
