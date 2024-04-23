@@ -1,17 +1,6 @@
-import { getCompetitor } from "@/clients/sst-client";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { useEffect, useState } from "react";
 
-export default function CompetitorName() {
-  const [competitor, setCompetitor] = useState(null);
-
-  useEffect(() => {
-    getCompetitor().then((data) => {
-      // console.log("data", data);
-      setCompetitor(data);
-    });
-  }, []);
-
+export default function CompetitorName({ competitor }) {
   if (!competitor) return "loading...";
 
   return (

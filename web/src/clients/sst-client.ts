@@ -51,3 +51,12 @@ export const submitSolution = async (taskId, submittedSolution) => {
     throw new Error(error.response?.data || "Something went wrong");
   }
 };
+
+export const getStats = async () => {
+  try {
+    const response = await instance.get(`/stats`, {});
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data || "Something went wrong");
+  }
+};

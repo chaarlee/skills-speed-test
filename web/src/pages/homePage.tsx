@@ -6,12 +6,20 @@ import CompetitorName from "./components/competitorName";
 import TasksWithSubmissions from "./components/tasksWithSubmissions";
 import { useEffect, useState } from "react";
 import TaskWithSubmissions from "./components/taskWithSubmissions";
-import { getTasksWithSubmissions } from "@/clients/sst-client";
+import { getCompetitor, getTasksWithSubmissions } from "@/clients/sst-client";
 
 export default function HomePage() {
   const [secret, setSecret] = useCookie("secret", "");
   const [tasks, setTasks] = useState([]);
   const [selectedTask, setSelectedTask] = useState(null);
+  const [competitor, setCompetitor] = useState(null);
+
+  useEffect(() => {
+    getCompetitor().then((data) => {
+      // console.log("data", data);
+      setCompetitor(data);
+    });
+  }, []);
 
   const loadTasks = () => {
     if (!secret) return;
@@ -48,7 +56,7 @@ export default function HomePage() {
             <span className="font-bold">Skills - Speed Test</span>
           </div>
           <div className="flex gap-4 items-center">
-            <CompetitorName />
+            <CompetitorName competitor={competitor} />
             <LogoutButton />
           </div>
         </div>

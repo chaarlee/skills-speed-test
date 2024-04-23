@@ -133,6 +133,56 @@ class DBSpeedTest {
     this.saveSubmissions();
     return submission;
   }
+
+  getStats() {
+    const competitors = this.competitors.sort((a, b) =>
+      a.id.localeCompare(b.id)
+    );
+    return {
+      competitors: competitors.map((c) => ({
+        ...c,
+        totalSubmissions: this.submissions.filter(
+          (s) => s.competitorId === c.id
+        ).length,
+        totalSuccessfulSubmissions: this.submissions.filter(
+          (s) => s.competitorId === c.id && s.isSuccessful
+        ).length,
+        point: this.tasks.reduce((acc, task) => {
+          const submission = this.submissions.find(
+            (s) =>
+              s.competitorId === c.id && s.taskId === task.id && s.isSuccessful
+          );
+          return acc + (submission ? task.point : 0);
+        }, 0),
+      })),
+      tasks: this.tasks.map(this.removeSolutionFromTask).map((task) => {
+        const submissions = this.submissions.filter(
+          (s) => s.taskId === task.id
+        );
+        return {
+          ...task,
+          totalSubmissions: submissions.length,
+          competitorsSubmission: competitors.reduce((acc: object, c) => {
+            const competitorSubmissions = submissions.filter(
+              (s) => s.competitorId === c.id
+            );
+            const competitorSubmissionstats = {
+              totalSubmissions: competitorSubmissions.length,
+              isSuccessful:
+                competitorSubmissions.filter((s) => s.isSuccessful).length > 0,
+            };
+            return {
+              ...acc,
+              [c.id]: competitorSubmissionstats,
+            };
+          }, {}),
+        };
+      }),
+      totalPoint: this.tasks.reduce((acc, task) => {
+        return acc + task.point;
+      }, 0),
+    };
+  }
 }
 
 module.exports = { DBSpeedTest };

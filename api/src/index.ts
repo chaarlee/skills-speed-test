@@ -58,6 +58,10 @@ app.get("/competitor", (req: Request, res: Response) => {
   res.json(competitor);
 });
 
+app.get("/stats", (req: Request, res: Response) => {
+  res.json(DB.getStats());
+});
+
 app.get("/tasksWithSubmissions", (req: Request, res: Response) => {
   const secret = req.headers["sst-secret"] as string;
   res.json(DB.getTasksWithSubmissions(secret));
