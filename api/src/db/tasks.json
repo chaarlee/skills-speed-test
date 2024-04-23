@@ -5,7 +5,7 @@
     "description": "n*n",
     "input": "[{\"n\":1},{\"n\":2},{\"n\":3}]",
     "solution": "[1,4,9]",
-    "point": 0
+    "point": 3
   },
   {
     "id": 1,

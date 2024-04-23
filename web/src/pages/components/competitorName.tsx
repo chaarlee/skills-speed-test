@@ -1,4 +1,5 @@
 import { getCompetitor } from "@/clients/sst-client";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { useEffect, useState } from "react";
 
 export default function CompetitorName() {
@@ -13,5 +14,13 @@ export default function CompetitorName() {
 
   if (!competitor) return "loading...";
 
-  return <span className="text-sm font-bold">{competitor.name}</span>;
+  return (
+    <>
+      <Avatar className="h-8 w-8">
+        <AvatarImage src={competitor.photoUrl} />
+      </Avatar>
+
+      <span className="text-sm font-bold">{competitor.name}</span>
+    </>
+  );
 }

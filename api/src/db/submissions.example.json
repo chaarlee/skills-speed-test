@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "competitorId": "1",
+    "taskId": 0,
+    "submittedSolution": "[{\"n\":1},{\"n\":2},{\"n\":3}]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-23T09:18:21.954Z"
+  },
+  {
+    "id": 2,
+    "competitorId": "1",
+    "taskId": 0,
+    "submittedSolution": "[1,4,8]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-23T09:18:32.707Z"
+  },
+  {
+    "id": 3,
+    "competitorId": "1",
+    "taskId": 0,
+    "submittedSolution": "[1,4,9]",
+    "isSuccessful": true,
+    "createdAt": "2024-04-23T09:18:38.722Z"
+  }
+]

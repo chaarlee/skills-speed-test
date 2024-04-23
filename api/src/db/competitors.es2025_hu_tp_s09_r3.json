@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Stefán Kornél",
+    "nationality": "hu",
+    "workstation": "",
+    "secret": "tjelt0"
+  },
+  {
+    "id": "2",
+    "name": "Szabó Ármin András",
+    "nationality": "hu",
+    "workstation": "",
+    "secret": "pdz3mq"
+  },
+  {
+    "id": "3",
+    "name": "Horváth Dániel",
+    "nationality": "hu",
+    "workstation": "",
+    "secret": "pec5b9"
+  }
+]

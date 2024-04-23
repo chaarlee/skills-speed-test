@@ -14,6 +14,7 @@ export default function HomePage() {
   const [selectedTask, setSelectedTask] = useState(null);
 
   const loadTasks = () => {
+    if (!secret) return;
     getTasksWithSubmissions().then((data) => {
       // console.log("data", data);
       setTasks(data);
@@ -39,8 +40,8 @@ export default function HomePage() {
   }
 
   return (
-    <div className="grid grid-cols-4 w-full gap-4">
-      <header className="col-span-4">
+    <div className="flex flex-col h-screen w-full gap-4">
+      <header className="w-full sticky top-0 z-50 border-b-white border-b-2">
         <div className="flex justify-between items-center h-16 px-4 bg-skills text-white">
           <div className="flex gap-4 items-center">
             <Rabbit className="h-8 w-8" />
@@ -52,14 +53,30 @@ export default function HomePage() {
           </div>
         </div>
       </header>
-      <div className="col-span-1">
-        <TasksWithSubmissions tasks={tasks} setSelectedTask={setSelectedTask} />
-      </div>
-      {selectedTask && (
-        <div className="col-span-3">
-          <TaskWithSubmissions task={selectedTask} reloadTasks={loadTasks} />
+      <main className="flex h-full gap-4 overflow-auto">
+        <div className="w-[25%] h-full">
+          <TasksWithSubmissions
+            tasks={tasks}
+            setSelectedTask={setSelectedTask}
+          />
+          <div className="sticky bottom-0">
+            <button className="w-full h-12 bg-white font-bold mt-2 pr-4 justify-end items-center gap-2 flex">
+              <span>Total:</span>
+              <span>
+                {tasks.reduce((acc, t) => {
+                  return acc + t.point * (t.isSolved ? 1 : 0);
+                }, 0)}
+                pt
+              </span>
+            </button>
+          </div>
         </div>
-      )}
+        {selectedTask && (
+          <div className="w-[75%] h-full overflow-auto">
+            <TaskWithSubmissions task={selectedTask} reloadTasks={loadTasks} />
+          </div>
+        )}
+      </main>
     </div>
   );
 }

@@ -18,6 +18,7 @@ export type Competitor = {
   nationality: string;
   workstation?: string;
   secret: string;
+  photoUrl?: string;
 };
 
 export type Submission = {
@@ -47,7 +48,21 @@ class DBSpeedTest {
     console.log("tasks", tasks.length);
     this.tasks = tasks.sort((a: Task, b: Task) => a.id - b.id);
 
-    this.submissions = [];
+    if (!fs.existsSync(`${dir}/submissions.json`)) {
+      fs.writeFileSync(`${dir}/submissions.json`, "[]");
+    }
+    const submissions = JSON.parse(
+      fs.readFileSync(`${dir}/submissions.json`, "utf-8")
+    );
+    console.log("submissions", submissions.length);
+    this.submissions = submissions;
+  }
+
+  saveSubmissions() {
+    fs.writeFileSync(
+      `${this.dir}/submissions.json`,
+      JSON.stringify(this.submissions, null, 2)
+    );
   }
 
   removeSolutionFromTask(task: Task): TaskWithoutSolution {
@@ -115,6 +130,7 @@ class DBSpeedTest {
       createdAt: new Date().toISOString(),
     };
     this.submissions.push(submission);
+    this.saveSubmissions();
     return submission;
   }
 }

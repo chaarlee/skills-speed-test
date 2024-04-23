@@ -1,23 +1,26 @@
 [
   {
     "id": "1",
-    "name": "Stefán Kornél",
+    "name": "Neo",
     "nationality": "hu",
-    "workstation": "",
-    "secret": "tjelt0"
+    "workstation": "Matrix",
+    "secret": "neo",
+    "photoUrl": "/public/neo.png"
   },
   {
     "id": "2",
-    "name": "Szabó Ármin András",
+    "name": "Trinity",
     "nationality": "hu",
-    "workstation": "",
-    "secret": "pdz3mq"
+    "workstation": "Nebuchadnezzar",
+    "secret": "trinity",
+    "photoUrl": "/public/trinity.png"
   },
   {
     "id": "3",
-    "name": "Horváth Dániel",
+    "name": "Morpheus",
     "nationality": "hu",
-    "workstation": "",
-    "secret": "pec5b9"
+    "workstation": "Zion",
+    "secret": "morpheus",
+    "photoUrl": "/public/morpheus.png"
   }
 ]

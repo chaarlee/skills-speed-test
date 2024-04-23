@@ -18,15 +18,13 @@ function isJsonStringWithArray(str) {
 }
 
 export default function TaskWithSubmission({ task, reloadTasks }) {
-  const [submissions, setSubmissions] = useState([]);
   const [competitorSolution, setCompetitorSolution] = useState("");
 
   useEffect(() => {
-    // getTasksWithResult().then((data) => {
-    //   console.log("data", data);
-    //   setTasks(data);
-    // });
-  }, []);
+    if (task) {
+      setCompetitorSolution("");
+    }
+  }, [task]);
 
   // if (!tasks.length) return "loading...";
 
