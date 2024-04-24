@@ -1,11 +1,11 @@
 [
   {
     "id": "1",
-    "name": "Horváth Dániel",
+    "name": "Horváth Dávid",
     "nationality": "hu",
     "workstation": "11",
     "secret": "pec5b9",
-    "photoUrl": "/public/daniel.jpg"
+    "photoUrl": "/public/david.jpg"
   },
   {
     "id": "2",

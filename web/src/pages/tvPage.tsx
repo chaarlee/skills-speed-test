@@ -27,6 +27,7 @@ export default function TVPage() {
   return (
     <div className="flex flex-col h-screen w-full p-4">
       <div className={`grid grid-cols-${competitorsCnt + 2} gap-2 m-1`}>
+        {/* <div className={`grid grid-cols-5 gap-2 m-1`}> */}
         <div className="col-span-2 bg-primary text-primary-foreground h-12 flex items-center justify-center font-bold">
           Task
         </div>
