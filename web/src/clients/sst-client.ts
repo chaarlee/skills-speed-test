@@ -1,7 +1,8 @@
 import axios from "axios";
 import { getCookie } from "react-use-cookie";
 
-const BASE_URL = "http://api.speedtest.skills";
+const BASE_URL = "http://localhost:5432";
+// const BASE_URL = "http://api.speedtest.skills";
 
 const instance = axios.create({
   baseURL: BASE_URL,

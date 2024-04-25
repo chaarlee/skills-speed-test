@@ -30,14 +30,25 @@ export type Submission = {
   createdAt: string;
 };
 
+export type General = {
+  name: string;
+  mins: number;
+};
+
 class DBSpeedTest {
   dir: string;
   tasks: Task[];
   competitors: Competitor[];
   submissions: Submission[];
+  general: General;
 
   constructor(dir: string) {
     this.dir = dir;
+
+    const general = JSON.parse(fs.readFileSync(`${dir}/general.json`, "utf-8"));
+    console.log("general", general);
+    this.general = general;
+
     const competitors = JSON.parse(
       fs.readFileSync(`${dir}/competitors.json`, "utf-8")
     );
@@ -139,6 +150,7 @@ class DBSpeedTest {
       a.id.localeCompare(b.id)
     );
     return {
+      general: this.general,
       competitors: competitors.map((c) => ({
         ...c,
         totalSubmissions: this.submissions.filter(

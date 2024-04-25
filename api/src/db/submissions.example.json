@@ -22,5 +22,93 @@
     "submittedSolution": "[1,4,9]",
     "isSuccessful": true,
     "createdAt": "2024-04-23T09:18:38.722Z"
+  },
+  {
+    "id": 4,
+    "competitorId": "1",
+    "taskId": 1,
+    "submittedSolution": "[{\"str\":\"\"},{\"str\":\"a\"},{\"str\":\"ab\"},{\"str\":\"aA\"},{\"str\":\"abcdefg\"},{\"str\":\"aa\"},{\"str\":\"  \"},{\"str\":\"abbcdefg\"}]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-23T09:27:29.739Z"
+  },
+  {
+    "id": 5,
+    "competitorId": "2",
+    "taskId": 0,
+    "submittedSolution": "[{\"n\":1},{\"n\":2},{\"n\":3}]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-23T10:58:44.811Z"
+  },
+  {
+    "id": 6,
+    "competitorId": "2",
+    "taskId": 0,
+    "submittedSolution": "[1,4,9]",
+    "isSuccessful": true,
+    "createdAt": "2024-04-23T10:58:59.796Z"
+  },
+  {
+    "id": 7,
+    "competitorId": "1",
+    "taskId": 2,
+    "submittedSolution": "[{\"arr\":[5,7,4]},{\"arr\":[4,3,9]},{\"arr\":[9]},{\"arr\":[7]},{\"arr\":[9,9,9]},{\"arr\":[1,9,9,9]},{\"arr\":[9,2,2,3,3,7,2,0,3,6,8,5,4,7,7,5,8,0,7,5,3,2,6,7,8,4,2,4,2,6,7,8,7,4,5,2,1]}]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-24T07:15:09.685Z"
+  },
+  {
+    "id": 8,
+    "competitorId": "1",
+    "taskId": 1,
+    "submittedSolution": "[true,true,true,false,true,false,false,false]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-24T17:49:45.788Z"
+  },
+  {
+    "id": 9,
+    "competitorId": "1",
+    "taskId": 1,
+    "submittedSolution": "[true,true,true,true,true,false,false,false]",
+    "isSuccessful": true,
+    "createdAt": "2024-04-24T17:50:08.040Z"
+  },
+  {
+    "id": 10,
+    "competitorId": "1",
+    "taskId": 3,
+    "submittedSolution": "[5,3,4,-1,2,0,0,2,-1,18]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-24T17:53:20.789Z"
+  },
+  {
+    "id": 11,
+    "competitorId": "3",
+    "taskId": 0,
+    "submittedSolution": "[{\"n\":1},{\"n\":2},{\"n\":3}]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-25T09:16:17.528Z"
+  },
+  {
+    "id": 12,
+    "competitorId": "3",
+    "taskId": 0,
+    "submittedSolution": "[1,4,9]",
+    "isSuccessful": true,
+    "createdAt": "2024-04-25T09:16:31.882Z"
+  },
+  {
+    "id": 13,
+    "competitorId": "3",
+    "taskId": 11,
+    "submittedSolution": "[1,2]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-25T09:18:20.537Z"
+  },
+  {
+    "id": 14,
+    "competitorId": "3",
+    "taskId": 9,
+    "submittedSolution": "[{\"a\":\"abc\",\"b\":\"def\"},{\"a\":\"efcd\",\"b\":\"yfue\"},{\"a\":\"abc\",\"b\":\"defghij\"},{\"a\":\"efcdddd\",\"b\":\"yfue\"},{\"a\":\"efcdabcdefghijklmnopqrstuvwxyz1234567890\",\"b\":\"yfue\"},{\"a\":\"\",\"b\":\"abc\"},{\"a\":\"def\",\"b\":\"\"}]",
+    "isSuccessful": false,
+    "createdAt": "2024-04-25T09:26:05.429Z"
   }
 ]

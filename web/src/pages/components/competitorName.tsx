@@ -5,7 +5,7 @@ export default function CompetitorName({ competitor }) {
 
   return (
     <div className="flex gap-2 items-center">
-      <Avatar className="h-8 w-8">
+      <Avatar className="h-16 w-16 border-4 border-white">
         <AvatarImage src={competitor.photoUrl} />
       </Avatar>
 

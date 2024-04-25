@@ -82,3 +82,10 @@
 #root {
   @apply flex flex-col min-h-screen;
 }
+
+body {
+  background: url("/background.png");
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-position: bottom -10vh left -10vw;
+}

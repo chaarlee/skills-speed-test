@@ -73,7 +73,7 @@ export default function HomePage() {
               <span>
                 {tasks.reduce((acc, t) => {
                   return acc + t.point * (t.isSolved ? 1 : 0);
-                }, 0)}
+                }, 0)}{" "}
                 pt
               </span>
             </button>
