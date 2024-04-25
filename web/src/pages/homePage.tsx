@@ -68,7 +68,7 @@ export default function HomePage() {
             setSelectedTask={setSelectedTask}
           />
           <div className="sticky bottom-0">
-            <button className="w-full h-12 bg-white font-bold mt-2 pr-4 justify-end items-center gap-2 flex">
+            <button className="w-full h-12 font-bold mt-2 pr-4 justify-end items-center gap-2 flex">
               <span>Total:</span>
               <span>
                 {tasks.reduce((acc, t) => {

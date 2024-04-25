@@ -9,7 +9,7 @@ export default function tasksWithSubmissions({ tasks, setSelectedTask }) {
         <div key={task.id} className="w-full">
           <Button
             variant={"outline"}
-            className={`w-full flex justify-between ${
+            className={`w-full flex justify-between opacity-70 ${
               task.submissions.length === 0
                 ? ""
                 : task.isSolved

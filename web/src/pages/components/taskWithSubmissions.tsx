@@ -29,7 +29,7 @@ export default function TaskWithSubmission({ task, reloadTasks }) {
   // if (!tasks.length) return "loading...";
 
   return (
-    <Card className="mr-4">
+    <Card className="mr-4 bg-white bg-opacity-60">
       <CardHeader>
         <div className="flex justify-between">
           <div className="font-bold text-xl flex items-center">
