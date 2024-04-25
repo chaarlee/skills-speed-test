@@ -15,6 +15,7 @@ export default function CompetitorName({ competitor }) {
           ({competitor.workstation})
         </span>
       )}
+      <span className={`fi fi-${competitor.nationality}`} />
     </div>
   );
 }
