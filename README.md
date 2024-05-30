@@ -11,6 +11,12 @@ The framework is language independent, the competitors can use what they want.
 - api/db/tasks.json
 - api/db/general.json
 
+## Example secrets
+- neo
+- trinity
+- morpheus
+- smith
+
 ## Run backend
 ```
 cd api
