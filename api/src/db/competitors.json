@@ -5,7 +5,7 @@
     "nationality": "hu",
     "workstation": "Matrix",
     "secret": "neo",
-    "photoUrl": "/public/neo.png"
+    "photoUrl": "/public/matrix/neo.png"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "nationality": "de",
     "workstation": "Nebuchadnezzar",
     "secret": "trinity",
-    "photoUrl": "/public/trinity.png"
+    "photoUrl": "/public/matrix/trinity.png"
   },
   {
     "id": "3",
@@ -21,6 +21,14 @@
     "nationality": "us",
     "workstation": "Zion",
     "secret": "morpheus",
-    "photoUrl": "/public/morpheus.png"
+    "photoUrl": "/public/matrix/morpheus.png"
+  },
+  {
+    "id": "4",
+    "name": "Agent Smith",
+    "nationality": "kr",
+    "workstation": "Matrix",
+    "secret": "smith",
+    "photoUrl": "/public/matrix/smith.png"
   }
 ]

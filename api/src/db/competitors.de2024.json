@@ -1,0 +1,114 @@
+[
+  {
+    "id": "1",
+    "name": "Bo Ryffel",
+    "nationality": "li",
+    "workstation": "-",
+    "secret": "ryffel",
+    "photoUrl": "/public/de/ryffel.jpeg"
+  },
+  {
+    "id": "2",
+    "name": "Olzhas Tynyshtyk",
+    "nationality": "kz",
+    "workstation": "",
+    "secret": "tynyshtyk",
+    "photoUrl": "/public/de/tynyshtyk.jpeg"
+  },
+  {
+    "id": "3",
+    "name": "Alnur Rysbek",
+    "nationality": "kz",
+    "workstation": "",
+    "secret": "rysbek",
+    "photoUrl": "/public/de/rysbek.jpeg"
+  },
+  {
+    "id": "4",
+    "name": "WeiHung Lai",
+    "nationality": "tw",
+    "workstation": "",
+    "secret": "lai",
+    "photoUrl": "/public/de/lai.jpeg"
+  },
+  {
+    "id": "5",
+    "name": "Jongwon Kim",
+    "nationality": "kr",
+    "workstation": "",
+    "secret": "kim",
+    "photoUrl": "/public/de/kim.jpeg"
+  },
+  {
+    "id": "6",
+    "name": "Mikael Kolehmainen",
+    "nationality": "fi",
+    "workstation": "",
+    "secret": "kolehmainen",
+    "photoUrl": "/public/de/kohlehmainen.jpeg"
+  },
+  {
+    "id": "7",
+    "name": "Besart Memeti",
+    "nationality": "ch",
+    "workstation": "",
+    "secret": "memeti",
+    "photoUrl": "/public/de/memeti.jpeg"
+  },
+  {
+    "id": "8",
+    "name": "Kornél Stefán",
+    "nationality": "hu",
+    "workstation": "",
+    "secret": "stefan",
+    "photoUrl": "/public/de/stefan.jpeg"
+  },
+  {
+    "id": "9",
+    "name": "Patrik Perčinić",
+    "nationality": "hr",
+    "workstation": "",
+    "secret": "percinic",
+    "photoUrl": "/public/de/percinic.jpeg"
+  },
+  {
+    "id": "10",
+    "name": "Thomas Guilbert",
+    "nationality": "fr",
+    "workstation": "",
+    "secret": "guilbert",
+    "photoUrl": "/public/de/guilbert.jpeg"
+  },
+  {
+    "id": "11",
+    "name": "Daniel Kalisch",
+    "nationality": "de",
+    "workstation": "",
+    "secret": "kalisch",
+    "photoUrl": "/public/de/kalisch.jpeg"
+  },
+  {
+    "id": "12",
+    "name": "Nils Jakubzick",
+    "nationality": "de",
+    "workstation": "",
+    "secret": "jakubzick",
+    "photoUrl": "/public/de/jakubzick.jpeg"
+  },
+  {
+    "id": "13",
+    "name": "Simon Brebeck",
+    "nationality": "de",
+    "workstation": "",
+    "secret": "brebeck",
+    "photoUrl": "/public/de/brebeck.jpeg"
+  },
+  {
+    "id": "14",
+    "name": "Lukas Hertkorn",
+    "nationality": "de",
+    "workstation": "",
+    "secret": "hertkorn",
+    "photoUrl": "/public/de/hertkorn.jpeg"
+  }
+]

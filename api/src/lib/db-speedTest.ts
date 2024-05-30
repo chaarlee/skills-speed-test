@@ -119,7 +119,7 @@ class DBSpeedTest {
   }
 
   checkSolution(solution: string, submittedSolution: string): boolean {
-    return _.isEqual(JSON.parse(submittedSolution), JSON.parse(solution));
+    return _.isEqual(JSON.parse(submittedSolution), solution);
   }
 
   submitSubmission(

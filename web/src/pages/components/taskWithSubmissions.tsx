@@ -1,11 +1,11 @@
+import { submitSolution } from "@/clients/sst-client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { useEffect, useState } from "react";
-import parse from "html-react-parser";
-import { CopyBlock, dracula, googlecode, monoBlue } from "react-code-blocks";
 import { Textarea } from "@/components/ui/textarea";
-import { submitSolution } from "@/clients/sst-client";
+import parse from "html-react-parser";
 import { CircleCheckBig, CircleX } from "lucide-react";
+import { useEffect, useState } from "react";
+import { CopyBlock, dracula, monoBlue } from "react-code-blocks";
 
 function isJsonStringWithArray(str) {
   try {
@@ -51,7 +51,7 @@ export default function TaskWithSubmission({ task, reloadTasks }) {
         <div className="font-bold text-lg my-2">Input</div>
         <div className="max-h-96 overflow-auto my-4">
           <CopyBlock
-            text={JSON.stringify(JSON.parse(task.input), null, 2)}
+            text={JSON.stringify(task.input, null, 2)}
             language="json"
             showLineNumbers={true}
             theme={dracula}
